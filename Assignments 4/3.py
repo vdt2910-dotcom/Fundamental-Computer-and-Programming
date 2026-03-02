@@ -1,13 +1,13 @@
-def number():
-    text = input("Type your text here: ")
+def find_number():
+    Paragraph = input(" Pls enter whaterver you want: ") 
+    p1 = Paragraph.split()
+    numbers = []
+    for i in p1:
+        clean = i.strip(".,")
+        if clean.isdigit():
+            numbers.append(int(clean))
     
-    total = 0
-    for word in text.split():
-        word = word.strip(".,!?")
-        if word.isdigit():
-            total += int(word)
+    tong = sum(numbers) 
+    return tong
 
-    print("Tổng số trong văn bản là:", total)
-    return total
-
-number()
+print(find_number())
