@@ -2,7 +2,7 @@ def course_code():
     
         nhap_khoa_hoc = input(" Nhap khoa hoc vao cho bo: ")
         
-        if nhap_khoa_hoc[:3].upper() and nhap_khoa_hoc[3:].isdigit() and nhap_khoa_hoc == 6:
+        if nhap_khoa_hoc[:3].upper() and nhap_khoa_hoc[3:].isdigit() and len(nhap_khoa_hoc) == 6:
             return " True "
         else :
             return " False "
@@ -10,3 +10,4 @@ def course_code():
     
 print(course_code())
             
+
